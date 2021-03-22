@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,200&display=swap" rel="stylesheet"> 
+    <title>Survey Form</title>
+</head>
+<body>
+    <header>
+        <h1 id="title">Hiring Survey</h1>
+        <p id="description">
+            Thank you for taking the time to
+            complete our Hiring Survey
+        </p>
+    </header>
+
+    <form action="" id="survey-form">
+        <div class="formGroup">
+            <label for="name" id="name-label">Name</label>
+            <input type="text" name="name" id="name" placeholder="Enter your name" required>
+        </div>
+
+        <div class="formGroup">
+            <label for="email" id="email-label">Email</label>
+            <input type="email" name="email" id="email" placeholder="Enter your Email" required>
+        </div>
+
+        <div class="formGroup">
+            <label for="age" id="number-label">Age</label>
+            <input type="number" name="age" id="number" placeholder="Age" min="18" max="60" required>
+        </div>
+
+        <div class="formGroup genderClass">
+            <p>Gender</p>
+            <table>
+                <tr>
+                    <td><input type="radio" id="male" name="gender" value="male"></td>
+                    <td><label for="male">Male</label></td>
+                </tr>
+                <tr>
+                    <td><input type="radio" id="female" name="gender" value="female"></td>  
+                    <td><label for="female">Female</label></td>
+                </tr>
+                <tr>
+                    <td><input type="radio" id="other" name="gender" value="other"></td>
+                    <td><label for="other">Other</label></td>
+                </tr>
+
+            </table>
+        </div>
+
+        <div class="formGroup">
+            <label for="studies" id="studies-label">Studies</label>
+            <select name="studies" id="dropdown" required>
+                <option value="" selected="" disabled="" >Select your level of Studies</option>
+                <option value="highschool">Highschool or lower / Self taught</option>
+                <option value="BSc">Bachelor's Degree</option>
+                <option value="MSc">Master's Degree or higher</option>
+            </select>
+        </div>
+
+        <div class="formGroup">
+            <p>Which of the languages below are you most familiar with?</p>
+            <label>
+                <input type="checkbox" class="inputCheckbox" name="prefer" value="html/css">
+                HTML/CSS
+            </label>
+            <label>
+                <input type="checkbox" class="inputCheckbox" name="prefer" value="javascript">
+                JavaScript
+            </label>
+            <label>
+                <input type="checkbox" class="inputCheckbox" name="prefer" value="php">
+                PHP
+            </label>
+            <label>
+                <input type="checkbox" class="inputCheckbox" name="prefer" value="sql">
+                SQL
+            </label>
+            <label>
+                <input type="checkbox" class="inputCheckbox" name="prefer" value="python">
+                Python
+            </label>
+            <label>
+                <input type="checkbox" class="inputCheckbox" name="prefer" value="other">
+                Other
+            </label>
+        </div>
+
+        <div class="formGroup">
+            <p>Additional comments</p>
+            <textarea id="comments" class="input-textarea" name="comment" placeholder="Enter your comment here..."></textarea>
+        </div>
+
+        <div class="formGroup">
+            <button type="submit" id="submit" class="submit-button"> Submit </button>
+        </div>
+
+
+    </form>
+
+</body>
+</html>
